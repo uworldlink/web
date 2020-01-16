@@ -1,0 +1,147 @@
+<style>
+@supports (backdrop-filter: none) {
+  .nav-bg {
+    /*background-color: rgba(21, 21, 21, 0.9);*/
+    backdrop-filter: blur(5px);
+  }
+  .modal {
+    background-color: rgba(21, 21, 21, 0.9);
+	/*backdrop-filter: blur(8px);*/
+  }
+}
+@supports (-webkit-backdrop-filter: none) {
+  .navbar {
+    background-color: rgba(21, 21, 21, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .modal {
+    background-color: rgba(21, 21, 21, 0.5);
+	-webkit-backdrop-filter: blur(8px);
+  }
+}
+@supports (backdrop-filter: none) or (-webkit-backdrop-filter: none) {
+  .dropdown-list {
+    background-color: rgba(21, 21, 21, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+  .frosted {
+    background-color: rgba(21, 21, 21, 0.5);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+  @media (max-width: 990px) {
+	.nav-menu {
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+    }
+  }
+}
+</style>
+
+<style>
+/* selection */
+::selection {
+  background: #d89c1b;
+  color: #e4e4e4;
+}
+::-moz-selection {
+  background: #d89c1b;
+  color: #e4e4e4;
+}
+* {
+  -webkit-tab-highlight-color: rgba(216, 156, 27, 0.8);
+  /*-webkit-user-select:none;
+  -webkit-touch-callout:none;
+  -webkit-text-size-adjust:none;*/
+}
+.navbar {
+  -webkit-user-select:none;
+}
+#modal-touch {
+  -webkit-user-select:none;
+}
+</style>
+
+<style>
+/* Website Light Appearance */
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: #f8f8f8;
+		color: #111111;
+	}
+	a {
+		color: #111111;
+	}
+	.preloader {
+		background-color: rgba(236, 235, 235, 1);
+	}
+	.navbar {
+		background-color: rgba(236, 235, 235, 0.8);
+	}
+  	.nav-overlay {
+		background-color: rgba(236, 235, 235, 1);
+	}
+	.dropdown-list {
+	background-color: rgba(236, 235, 235, 0.8);
+	}
+	@media (max-width: 990px) {
+		.nav-menu {
+			background-color: rgba(236, 235, 235, 0.8);
+		}
+	  	.dropdown-list {
+			background-color: rgba(21, 21, 21, 0.15);
+		}
+	}
+	@supports (backdrop-filter: none) {
+      .modal {
+			background-color: rgba(236, 235, 235, 0.8);
+			color: #e4e4e4;
+	  }
+	}
+  	@supports (-webkit-backdrop-filter: none) {
+      .modal {
+			background-color: rgba(236, 235, 235, 0.3);
+			color: #e4e4e4;
+	  }
+	}
+  	@supports (backdrop-filter: none) or (-webkit-backdrop-filter: none) {
+		.frosted {
+			background-color: rgba(21, 21, 21, 0.35);
+      }
+    }
+	@supports not (backdrop-filter: none) or (-webkit-backdrop-filter: none) {
+		.frosted {
+			background-color: rgba(236, 235, 235, 0.8);
+	  	}
+      	.modal {
+			background-color: rgba(236, 235, 235, 0.8);
+			color: #111111;
+	  	}
+	}
+  	.frosted {
+			color: #e4e4e4;
+    }
+	.footer {
+		background-color: #ecebeb;
+	}
+	.widget-icon, .icon {
+		filter: brightness(0.1) sepia(0) hue-rotate(0deg) saturate(5);
+	}
+  	.widget-icon:hover {
+		filter: brightness(1) sepia(0) hue-rotate(0deg) saturate(0);
+	}
+	.brand, .page-button, .menu-selector, .dropdown-link, .button-selector {
+		color: #111111;
+	}
+	.contentsection2 {
+		background-color: #cac8c8;
+	}
+	.banner-wrapper, .content-wrapper {
+		background-color: #cac8c8; /*#a8a8a8; /*#9b9b9b; /*#adabab;*/
+	}
+	.product-card {
+		background-color: #fafafa;
+	}
+}
+</style>
