@@ -62,11 +62,11 @@
 
 /* Website Light Appearance */
 @media (prefers-color-scheme: light) {
-	body {
+	.body {
 		background-color: #f8f8f8;
 		color: #111111;
 	}
-	a {
+	.a {
 		color: #111111;
 	}
 	.preloader {
