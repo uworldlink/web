@@ -1,4 +1,4 @@
-<style>
+
 @supports (backdrop-filter: none) {
   .nav-bg {
     /*background-color: rgba(21, 21, 21, 0.9);*/
@@ -37,9 +37,7 @@
     }
   }
 }
-</style>
 
-<style>
 /* selection */
 ::selection {
   background: #d89c1b;
@@ -61,9 +59,7 @@
 #modal-touch {
   -webkit-user-select:none;
 }
-</style>
 
-<style>
 /* Website Light Appearance */
 @media (prefers-color-scheme: light) {
 	body {
@@ -144,4 +140,4 @@
 		background-color: #fafafa;
 	}
 }
-</style>
+
