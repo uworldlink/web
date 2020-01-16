@@ -1,4 +1,4 @@
-<style>
+
 @supports (backdrop-filter: none) {
   .nav-bg {
     /*background-color: rgba(21, 21, 21, 0.9);*/
@@ -140,4 +140,3 @@
 		background-color: #fafafa;
 	}
 }
-</style>
