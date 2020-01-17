@@ -2,7 +2,7 @@ const targetMenu = document.querySelector("#overlay");
 const targetModal = document.querySelector("#modal");
   
 Webflow.push(function() {
-	var clicked = "false";
+ var clicked = "false";
   $('.w-nav-button').click(function(e) {
     e.preventDefault();
     if (clicked == "false") {
