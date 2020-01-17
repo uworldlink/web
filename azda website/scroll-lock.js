@@ -3,7 +3,6 @@ const targetModal = document.querySelector("#modal");
 const targetSlide = document.querySelector("#slide-touch");
   
 Webflow.push(function() {
-
 	var clicked = "false";
   $('.nav-overlay').click(function(e) {
     e.preventDefault();
@@ -34,7 +33,7 @@ $('.sliders').click(function(e) {
   e.preventDefault();
   bodyScrollLock.disableBodyScroll(targetSlide);
 });
-$('.contentsection2').click(function(e) {
+$('html, body').click(function(e) {
   e.preventDefault();
   bodyScrollLock.clearAllBodyScrollLocks();
 });
