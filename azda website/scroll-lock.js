@@ -21,5 +21,5 @@ $('.modal-open').click(function(e) {
 });
 $('.modal-close').click(function(e) {
   e.preventDefault();
-  bodyScrollLock.clearAllBodyScrollLocks();
+  bodyScrollLock.enableBodyScroll(targetModal);
 });
