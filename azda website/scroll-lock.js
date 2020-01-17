@@ -1,6 +1,5 @@
 const targetMenu = document.querySelector("#overlay");
 const targetModal = document.querySelector("#modal");
-const targetSlide = document.querySelector("#slide-touch");
   
 Webflow.push(function() {
 	var clicked = "false";
