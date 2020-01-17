@@ -175,4 +175,4 @@
         element:"html,body"
     };   
     
-}(jQuery));
+});
