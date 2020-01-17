@@ -4,10 +4,6 @@ const targetSlide = document.querySelector("#slide-touch");
   
 Webflow.push(function() {
 	var clicked = "false";
-  $('.nav-overlay').click(function(e) {
-    e.preventDefault();
-    clicked = "false";
-  });
   $('.w-nav-button').click(function(e) {
     e.preventDefault();
     if (clicked == "false") {
@@ -25,15 +21,6 @@ $('.modal-open').click(function(e) {
   bodyScrollLock.disableBodyScroll(targetModal);
 });
 $('.modal-close').click(function(e) {
-  e.preventDefault();
-  bodyScrollLock.enableBodyScroll(targetModal);
-});
-  
-$('.sliders').click(function(e) {
-  e.preventDefault();
-  bodyScrollLock.disableBodyScroll(targetSlide);
-});
-$('html, body').click(function(e) {
   e.preventDefault();
   bodyScrollLock.clearAllBodyScrollLocks();
 });
