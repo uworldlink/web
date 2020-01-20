@@ -11,6 +11,9 @@ function changeCSS(ref) {
   head.appendChild(link);
   }
 }
+var auto_theme = 'https://rawcdn.githack.com/uworldlink/web/28df23dcf4b284e52d9e86528895d3576f2d54df/azda website/css/theme_handler.css';
+var light_theme = 'https://rawcdn.githack.com/uworldlink/web/204a1a9f937f5af55cf414c73e960f39e2e1ad75/azda website/css/light-theme.css';
+var dark_theme = 'https://rawcdn.githack.com/uworldlink/web/204a1a9f937f5af55cf414c73e960f39e2e1ad75/azda website/css/dark-theme.css';
 
 if (localStorage.getItem('themeSwitch') === null) {
   changeCSS(auto_theme);
