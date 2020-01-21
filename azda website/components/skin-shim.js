@@ -17,13 +17,13 @@ var dark_theme = 'https://rawcdn.githack.com/uworldlink/web/204a1a9f937f5af55cf4
 
 if (localStorage.getItem('themeSwitch') === null) {
   loadCSS(auto_theme);
-  var current_theme = auto_mode;
+  var current_theme = 'auto_mode';
 }
 else if (localStorage.getItem('themeSwitch') == 1) {
   loadCSS(light_theme);
-  var current_theme = light_mode;
+  var current_theme = 'light_mode';
 }
 else if (localStorage.getItem('themeSwitch') == 2) {
   loadCSS(dark_theme);
-  var current_theme = dark_mode;
+  var current_theme = 'dark_mode';
 }
