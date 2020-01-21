@@ -6,16 +6,25 @@ function themeSelect(state) {
     $('#auto-mode').show();
     $('#light-mode').hide();
     $('#dark-mode').hide();
+    $('#auto-button').hide();
+    $('#light-button').show();
+    $('#dark-button').show();
   } 
   else if (state == "light_mode") {
     $('#auto-mode').hide();
     $('#light-mode').show();
     $('#dark-mode').hide();
+    $('#auto-button').show();
+    $('#light-button').hide();
+    $('#dark-button').show();
   }
   else if (state == "dark_mode") {
     $('#auto-mode').hide();
     $('#light-mode').hide();
     $('#dark-mode').show();
+    $('#auto-button').show();
+    $('#light-button').show();
+    $('#dark-button').hide();
   }
 }
 
