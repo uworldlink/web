@@ -16,7 +16,7 @@ var light_theme = 'https://rawcdn.githack.com/uworldlink/web/204a1a9f937f5af55cf
 var dark_theme = 'https://rawcdn.githack.com/uworldlink/web/204a1a9f937f5af55cf414c73e960f39e2e1ad75/azda website/css/dark-theme.css';
 
 function themeSelect(state) {
-  if (state == auto-mode) {
+  if (state == auto_mode) {
     $('#auto-mode').show();
     $('#light-mode').hide();
     $('#dark-mode').hide();
@@ -35,15 +35,15 @@ function themeSelect(state) {
 
 if (localStorage.getItem('themeSwitch') === null) {
   loadCSS(auto_theme);
-  themeSelect(auto-mode);
+  themeSelect(auto_mode);
 }
 else if (localStorage.getItem('themeSwitch') == 1) {
   loadCSS(light_theme);
-  themeSelect(light-mode);
+  themeSelect(light_mode);
 }
 else if (localStorage.getItem('themeSwitch') == 2) {
   loadCSS(dark_theme);
-  themeSelect(dark-mode);
+  themeSelect(dark_mode);
 }
 
 $(document).ready(function() {
@@ -51,18 +51,18 @@ $(document).ready(function() {
   	e.preventDefault();
   	localStorage.removeItem('themeSwitch');
     $('#skin').attr("href", auto_theme);
-    themeSelect(auto-mode);
+    themeSelect(auto_mode);
 	});
   $('.light-button').click(function(e) {
   	e.preventDefault();
     localStorage.setItem('themeSwitch', 1);
     $('#skin').attr("href", light_theme);
-    themeSelect(light-mode);
+    themeSelect(light_mode);
 	});
   $('.dark-button').click(function(e) {
   	e.preventDefault();
   	localStorage.setItem('themeSwitch', 2);
     $('#skin').attr("href", dark_theme);
-    themeSelect(dark-mode);
+    themeSelect(dark_mode);
 	});
 });
