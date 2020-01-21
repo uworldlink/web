@@ -16,17 +16,17 @@ var light_theme = 'https://rawcdn.githack.com/uworldlink/web/204a1a9f937f5af55cf
 var dark_theme = 'https://rawcdn.githack.com/uworldlink/web/204a1a9f937f5af55cf414c73e960f39e2e1ad75/azda website/css/dark-theme.css';
 
 function themeSelect(state) {
-  if (state == 'auto-mode') {
+  if (state == auto-mode) {
     $('#auto-mode').show();
     $('#light-mode').hide();
     $('#dark-mode').hide();
   } 
-  else if (state == 'light-mode') {
+  else if (state == light-mode) {
     $('#auto-mode').hide();
     $('#light-mode').show();
     $('#dark-mode').hide();
   }
-  else if (state == 'dark-mode') {
+  else if (state == dark-mode) {
     $('#auto-mode').hide();
     $('#light-mode').hide();
     $('#dark-mode').show();
