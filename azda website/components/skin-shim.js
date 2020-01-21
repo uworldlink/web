@@ -17,10 +17,40 @@ var dark_theme = 'https://rawcdn.githack.com/uworldlink/web/204a1a9f937f5af55cf4
 
 if (localStorage.getItem('themeSwitch') === null) {
   loadCSS(auto_theme);
+  $('#auto-mode').show();
 }
 else if (localStorage.getItem('themeSwitch') == 1) {
   loadCSS(light_theme);
+  $('#light-mode').show();
 }
 else if (localStorage.getItem('themeSwitch') == 2) {
   loadCSS(dark_theme);
+  $('#dark-mode').show();
 }
+
+$(document).ready(function() {
+  $('.auto-button').click(function(e) {
+  	e.preventDefault();
+  	localStorage.removeItem('themeSwitch');
+    $('#skin').attr("href", auto_theme);
+    $('#auto-mode').show();
+    $('#light-mode').hide();
+    $('#dark-mode').hide();
+	});
+  $('.light-button').click(function(e) {
+  	e.preventDefault();
+    localStorage.setItem('themeSwitch', 1);
+    $('#skin').attr("href", light_theme);
+    $('#auto-mode').hide();
+    $('#light-mode').show();
+    $('#dark-mode').hide();
+	});
+  $('.dark-button').click(function(e) {
+  	e.preventDefault();
+  	localStorage.setItem('themeSwitch', 2);
+    $('#skin').attr("href", dark_theme);
+    $('#auto-mode').hide();
+    $('#light-mode').hide();
+    $('#dark-mode').show();
+	});
+});
