@@ -7,12 +7,12 @@ function themeSelect(state) {
     $('#light-mode').hide();
     $('#dark-mode').hide();
   } 
-  else if (state == "light-mode") {
+  else if (state == "light_mode") {
     $('#auto-mode').hide();
     $('#light-mode').show();
     $('#dark-mode').hide();
   }
-  else if (state == "dark-mode") {
+  else if (state == "dark_mode") {
     $('#auto-mode').hide();
     $('#light-mode').hide();
     $('#dark-mode').show();
