@@ -1,4 +1,4 @@
-function changeCSS(ref) {
+function loadCSS(ref) {
   var cssId = 'skin';
   if (!document.getElementById(cssId)) {
   var head  = document.getElementsByTagName('head')[0];
@@ -16,11 +16,11 @@ var light_theme = 'https://rawcdn.githack.com/uworldlink/web/204a1a9f937f5af55cf
 var dark_theme = 'https://rawcdn.githack.com/uworldlink/web/204a1a9f937f5af55cf414c73e960f39e2e1ad75/azda website/css/dark-theme.css';
 
 if (localStorage.getItem('themeSwitch') === null) {
-  changeCSS(auto_theme);
+  loadCSS(auto_theme);
 }
-else if (localStorage.getItem('themeSwitch') === 1) {
-  changeCSS(light_theme);
+else if (localStorage.getItem('themeSwitch') == 1) {
+  loadCSS(light_theme);
 }
-else if (localStorage.getItem('themeSwitch') === 2) {
-  changeCSS(dark_theme);
+else if (localStorage.getItem('themeSwitch') == 2) {
+  loadCSS(dark_theme);
 }
