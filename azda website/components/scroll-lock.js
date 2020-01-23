@@ -8,10 +8,10 @@ document.push(function() {
   $('.w-nav-button').click(function(e) {
     e.preventDefault();
     if (clicked == "false") {
-    lock(targetMenu);
+    bodyScrollLock.lock(targetMenu);
     clicked = "true";
     } else {
-    unlock(targetMenu);
+    bodyScrollLock.unlock(targetMenu);
     clicked = "false";
     }
   });
@@ -19,9 +19,9 @@ document.push(function() {
 
 $('.modal-open').click(function(e) {
   e.preventDefault();
-  lock(targetModal);
+  bodyScrollLock.lock(targetModal);
 });
 $('.modal-close').click(function(e) {
   e.preventDefault();
-  unlock(targetModal);
+  bodyScrollLock.unlock(targetModal);
 });
