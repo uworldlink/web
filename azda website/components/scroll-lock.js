@@ -1,4 +1,3 @@
-import { lock, unlock } from 'https://cdn.jsdelivr.net/npm/tua-body-scroll-lock/dist/tua-bsl.esm.browser.min.js'
 
 const targetMenu = document.querySelector("#overlay");
 const targetModal = document.querySelector("#modal");
