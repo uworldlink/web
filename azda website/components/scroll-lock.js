@@ -2,7 +2,7 @@
 var targetMenu = document.querySelector("#overlay");
 var targetModal = document.querySelector("#modal");
 
-document.ready(function() {
+$(document).ready(function() {
  var clicked = "false";
   $('.w-nav-button').click(function(e) {
     e.preventDefault();
