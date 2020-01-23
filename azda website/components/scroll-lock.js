@@ -1,6 +1,6 @@
 
-const targetMenu = document.querySelector("#overlay");
-const targetModal = document.querySelector("#modal");
+var targetMenu = document.querySelector("#overlay");
+var targetModal = document.querySelector("#modal");
 
 document.ready(function() {
  var clicked = "false";
