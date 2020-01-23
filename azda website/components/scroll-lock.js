@@ -3,7 +3,7 @@ import { lock, unlock } from 'https://cdn.jsdelivr.net/npm/tua-body-scroll-lock/
 const targetMenu = document.querySelector("#overlay");
 const targetModal = document.querySelector("#modal");
 
-document.push(function() {
+document.ready(function() {
  var clicked = "false";
   $('.w-nav-button').click(function(e) {
     e.preventDefault();
