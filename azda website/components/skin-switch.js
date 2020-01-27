@@ -6,22 +6,22 @@ function themeSelect(state) {
     $('#auto-mode').show();
     $('#light-mode').hide();
     $('#dark-mode').hide();
-    $('#auto-button').hide();
     $('#light-button').show();
     $('#dark-button').show();
+    $('#auto-button').hide();
   } 
   else if (state == "light_mode") {
-    $('#auto-mode').hide();
     $('#light-mode').show();
+    $('#auto-mode').hide();
     $('#dark-mode').hide();
     $('#auto-button').show();
-    $('#light-button').hide();
     $('#dark-button').show();
+    $('#light-button').hide();
   }
   else if (state == "dark_mode") {
+    $('#dark-mode').show();
     $('#auto-mode').hide();
     $('#light-mode').hide();
-    $('#dark-mode').show();
     $('#auto-button').show();
     $('#light-button').show();
     $('#dark-button').hide();
