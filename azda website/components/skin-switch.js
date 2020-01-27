@@ -4,27 +4,24 @@ themeSelect(current_theme);
 function themeSelect(state) {
   if (state == "auto_mode") {
     $('#auto-mode').show();
-    $('.light-dark-animation').hide();
-    //$('#light-mode').hide();
-    //$('#dark-mode').hide();
+    $('#light-mode').hide();
+    $('#dark-mode').hide();
     $('#light-button').show();
     $('#dark-button').show();
     $('#auto-button').hide();
   } 
   else if (state == "light_mode") {
-    $('.light-dark-animation').show();
-    //$('#light-mode').show();
+    $('#light-mode').show();
     $('#auto-mode').hide();
-    //$('#dark-mode').hide();
+    $('#dark-mode').hide();
     $('#auto-button').show();
     $('#dark-button').show();
     $('#light-button').hide();
   }
   else if (state == "dark_mode") {
-    $('.light-dark-animation').show();
-    //$('#dark-mode').show();
+    $('#dark-mode').show();
     $('#auto-mode').hide();
-    //$('#light-mode').hide();
+    $('#light-mode').hide();
     $('#auto-button').show();
     $('#light-button').show();
     $('#dark-button').hide();
