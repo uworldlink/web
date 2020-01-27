@@ -4,7 +4,7 @@ themeSelect(current_theme);
 function themeSelect(state) {
   if (state == "auto_mode") {
     $('#auto-mode').show();
-    $('light-dark-animation').hide();
+    $('.light-dark-animation').hide();
     //$('#light-mode').hide();
     //$('#dark-mode').hide();
     $('#light-button').show();
@@ -12,7 +12,7 @@ function themeSelect(state) {
     $('#auto-button').hide();
   } 
   else if (state == "light_mode") {
-    $('light-dark-animation').show();
+    $('.light-dark-animation').show();
     //$('#light-mode').show();
     $('#auto-mode').hide();
     //$('#dark-mode').hide();
@@ -21,7 +21,7 @@ function themeSelect(state) {
     $('#light-button').hide();
   }
   else if (state == "dark_mode") {
-    $('light-dark-animation').show();
+    $('.light-dark-animation').show();
     //$('#dark-mode').show();
     $('#auto-mode').hide();
     //$('#light-mode').hide();
