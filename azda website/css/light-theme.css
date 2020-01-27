@@ -8,6 +8,9 @@
   .navbar {
     -webkit-backdrop-filter: blur(5px);
   }
+  .modal-bg {
+    -webkit-backdrop-filter: blur(8px);
+  }
 }
 @supports (backdrop-filter: none) or (-webkit-backdrop-filter: none) {
   .dropdown-list {
@@ -84,8 +87,7 @@
 	}
   	@supports (-webkit-backdrop-filter: none) {
       .modal {
-			/*background-color: rgba(236, 235, 235, 0.3);*/
-	      		background-color: rgba(236, 235, 235, 0.8);
+	      		background-color: rgba(236, 235, 235, 0.3);
 			color: #e4e4e4;
 	  }
 	}
@@ -110,12 +112,12 @@
 		background-color: #ecebeb;
 	}
 	.widget-icon, .icon {
-		filter: brightness(0.1) sepia(0) hue-rotate(0deg) saturate(5);
+		filter: brightness(0.1) sepia(0) hue-rotate(0deg) saturate(0);
 	}
   	.widget-icon:hover {
 		filter: brightness(1) sepia(0) hue-rotate(0deg) saturate(0);
 	}
-	.brand, .page-button, .menu-selector, .dropdown-link, .button-selector {
+	.brand, .page-button, .menu-selector, .dropdown-link, .button-selector, .tab-selector {
 		color: #111111;
 	}
 	.contentsection2 {
