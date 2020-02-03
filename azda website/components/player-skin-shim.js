@@ -1,6 +1,6 @@
 function load_player_CSS(ref) {
   var playerId = 'player-skin';
-  if (!document.getElementById(cssId)) {
+  if (!document.getElementById(playerId)) {
   var head  = document.getElementsByTagName('head')[0];
   var link  = document.createElement('link');
   link.id   = playerId;
