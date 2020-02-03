@@ -28,6 +28,12 @@
     }
   }
 }
+.navbar {
+  -webkit-user-select:none;
+}
+#modal-touch {
+  -webkit-user-select:none;
+}
 
 /* selection */
 ::selection {
@@ -44,13 +50,6 @@
   -webkit-touch-callout:none;
   -webkit-text-size-adjust:none;*/
 }
-.navbar {
-  -webkit-user-select:none;
-}
-#modal-touch {
-  -webkit-user-select:none;
-}
-
 /* Website Light Appearance */
 body {
 	background-color: #f8f8f8;
