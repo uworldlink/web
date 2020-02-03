@@ -77,6 +77,9 @@ a {
 	.dropdown-list {
 		background-color: rgba(21, 21, 21, 0.15);
 	}
+	.menu-selector.w--open {
+		background-color: #dd8a17;
+	}
 }
 @supports (backdrop-filter: none) {
 	.modal {
@@ -118,7 +121,7 @@ a {
 .brand, .page-button, .menu-selector, .dropdown-link, .button-selector, .tab-selector {
 	color: #111111;
 }
-.button-selector.w--current, .tab-selector.w--current, .menu-selector.w--open {
+.button-selector.w--current, .tab-selector.w--current {
 	background-color: #dd8a17;
 }
 .page-button.w--current, .dropdown-link.w--current {
