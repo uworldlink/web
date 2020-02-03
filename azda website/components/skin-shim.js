@@ -13,7 +13,7 @@ function loadCSS(ref) {
 }
 var auto_theme = 'https://rawcdn.githack.com/uworldlink/web/ffc6f6c237c60c15e12cee18daca6af5d4692127/azda website/css/default.css';
 var light_theme = 'https://rawcdn.githack.com/uworldlink/web/ffc6f6c237c60c15e12cee18daca6af5d4692127/azda website/css/light-theme.css';
-var dark_theme = 'https://raw.githubusercontent.com/uworldlink/web/master/azda%20website/css/dark-theme.css';
+var dark_theme = 'https://rawcdn.githack.com/uworldlink/web/5032c4f6a3c2417cacba931c12bc95aebba09c88/azda website/css/dark-theme.css';
 
 if (localStorage.getItem('themeSwitch') === null) {
   loadCSS(auto_theme);
