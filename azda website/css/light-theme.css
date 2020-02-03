@@ -23,8 +23,8 @@
   }
   @media screen and (max-width: 991px){
 	.nav-menu {
-      -webkit-backdrop-filter: blur(5px);
-      backdrop-filter: blur(5px);
+  	-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
     }
   }
 }
@@ -119,7 +119,7 @@ a {
 .brand, .page-button, .menu-selector, .dropdown-link, .button-selector, .tab-selector {
 	color: #111111;
 }
-.button-selector.w--current, .tab-selector.w--current {
+.button-selector.w--current, .tab-selector.w--current, .menu-selector.w--open {
 	background-color: #dd8a17;
 }
 .page-button.w--current, .dropdown-link.w--current {
@@ -140,12 +140,12 @@ a {
 .backtotop-button:hover, .widget-link:hover, .hero-button:hover {
 	background-color: #dd8a17;
 }
-.about-link:hover, .close-icon:hover {
+.modal-open:hover, .about-link:hover, .close-icon:hover {
 	color: #dd8a17;
 }
 .media-title {
 	color: #dd8a17;
 }
-.text-field:focus, .textarea:focus {
+.square-wrapper:hover, .text-field:focus, .textarea:focus {
 	border-color: #dd8a17;
 }
