@@ -120,8 +120,11 @@ a {
 .brand, .page-button, .menu-selector, .dropdown-link, .button-selector, .tab-selector {
 	color: #111111;
 }
-.page-button.w--current, .dropdown-link.w--current, .button-selector.w--current, .tab-selector.w--current {
-	color: #111111;
+.button-selector.w--current, .tab-selector.w--current {
+	background-color: #dd8a17;
+}
+.page-button.w--current, .dropdown-link.w--current {
+	color: #dd8a17;
 }
 .contentsection2 {
 	background-color: #cac8c8;
