@@ -11,9 +11,9 @@ function loadCSS(ref) {
   head.appendChild(link);
   }
 }
-var auto_theme = 'https://rawcdn.githack.com/uworldlink/web/ec2111033ff227dd47663d0f05aaf88473af8a55/azda website/css/default.css';
-var light_theme = 'https://rawcdn.githack.com/uworldlink/web/2f5cfb97b50d4f791660dec6d3b1ebca164c7089/azda website/css/light-theme.css';
-var dark_theme = 'https://rawcdn.githack.com/uworldlink/web/a4f75c1177a6e414b71ffa135699cee6a3b1d466/azda website/css/dark-theme.css';
+var auto_theme = 'https://rawcdn.githack.com/uworldlink/web/ffc6f6c237c60c15e12cee18daca6af5d4692127/azda website/css/default.css';
+var light_theme = 'https://rawcdn.githack.com/uworldlink/web/ffc6f6c237c60c15e12cee18daca6af5d4692127/azda website/css/light-theme.css';
+var dark_theme = 'https://raw.githubusercontent.com/uworldlink/web/master/azda%20website/css/dark-theme.css';
 
 if (localStorage.getItem('themeSwitch') === null) {
   loadCSS(auto_theme);
