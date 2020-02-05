@@ -56,12 +56,7 @@
   background: #dd8a17;
   color: #e4e4e4;
 }
-* {
-  -webkit-tab-highlight-color: rgba(216, 156, 27, 0.8);
-  /*-webkit-user-select:none;
-  -webkit-touch-callout:none;
-  -webkit-text-size-adjust:none;*/
-}
+
 /* Website Light Appearance */
 body {
 	background-color: #f8f8f8;
@@ -141,6 +136,9 @@ a {
 }
 .contentsection2 {
 	background-color: #cac8c8;
+}
+.banner-header {
+	background-color: #bdbcbc;
 }
 .banner-wrapper, .content-wrapper {
 	background-color: #cac8c8;
