@@ -47,7 +47,7 @@ $(document).ready(function() {
 			eval(code);
 		}
 	}
-}
+})
 									
 function setMode(mode){
 	var isStorageEnabled = ! (typeof localStorage == 'undefined');
