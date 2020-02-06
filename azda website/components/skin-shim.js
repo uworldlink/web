@@ -15,7 +15,7 @@ var auto_theme = 'https://rawcdn.githack.com/uworldlink/web/67012c6bfd2ecb51f5d4
 var light_theme = 'https://rawcdn.githack.com/uworldlink/web/67012c6bfd2ecb51f5d4dc97533234b9209b92bf/azda website/css/light-theme.css';
 var dark_theme = 'https://rawcdn.githack.com/uworldlink/web/5032c4f6a3c2417cacba931c12bc95aebba09c88/azda website/css/dark-theme.css';
 
-if (localStorage.getItem('themeSwitch') === null) {
+if (localStorage.getItem('themeSwitch') === null or localStorage.getItem('themeSwitch') == 0) {
   loadCSS(auto_theme);
   var current_theme = 0;
 }
