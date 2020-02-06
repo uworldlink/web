@@ -58,13 +58,13 @@ function setMode(mode){
 }
 
 function changeSkin(set_skin){
-	if(set_skin === 0){
+	if(set_skin == 0){
 		$('#skin').attr("href", auto_theme);
 	}
-	if(set_skin === 1){
+	if(set_skin == 1){
 		$('#skin').attr("href", light_theme);
 	}
-	if(set_skin === 2){
+	if(set_skin == 2){
 		$('#skin').attr("href", dark_theme);
 	}
 	themeSelect(set_skin);
