@@ -15,7 +15,7 @@ var auto_skin_player = 'https://rawcdn.githack.com/uworldlink/web/af6066d33fe3dc
 var light_skin_player = 'https://rawcdn.githack.com/uworldlink/web/af6066d33fe3dc5c49e76eb024f304f571b48b85/azda website/css/light-skin-player.css';
 var dark_skin_player = 'https://rawcdn.githack.com/uworldlink/web/af6066d33fe3dc5c49e76eb024f304f571b48b85/azda website/css/dark-skin-player.css';
 
-if (localStorage.getItem('themeSwitch') === null) {
+if ((localStorage.getItem('themeSwitch') === null) || (localStorage.getItem('themeSwitch') == 0)) {
   load_player_CSS(auto_skin_player);
 }
 else if (localStorage.getItem('themeSwitch') == 1) {
