@@ -55,7 +55,7 @@ function setMode(mode){
 		localStorage.setItem('themeSwitch', mode);
 	}
 	changeSkin(mode);
-	if (document.getElementById("player-skin")){
+	if (document.getElementById('player-skin')){
 		changePlayerSkin(mode);
 	}
 }
