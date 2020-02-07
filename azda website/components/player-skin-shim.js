@@ -12,8 +12,8 @@ function load_player_CSS(ref) {
   }
 }
 var auto_skin_player = 'https://cdn.jsdelivr.net/gh/uworldlink/web/azda%20website/css/player/default-player.min.css';
-var light_skin_player = 'https://cdn.jsdelivr.net/gh/uworldlink/web/azda%20website/css/player/light-player.min.css'';
-var dark_skin_player = 'https://cdn.jsdelivr.net/gh/uworldlink/web/azda%20website/css/player/dark-player.min.css'';
+var light_skin_player = 'https://cdn.jsdelivr.net/gh/uworldlink/web/azda%20website/css/player/light-player.min.css';
+var dark_skin_player = 'https://cdn.jsdelivr.net/gh/uworldlink/web/azda%20website/css/player/dark-player.min.css';
 
 if ((localStorage.getItem('themeSwitch') === null) || (localStorage.getItem('themeSwitch') == 0)) {
   load_player_CSS(auto_skin_player);
