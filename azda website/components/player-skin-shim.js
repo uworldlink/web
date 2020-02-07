@@ -11,9 +11,9 @@ function load_player_CSS(ref) {
   head.appendChild(link);
   }
 }
-var auto_skin_player = 'https://rawcdn.githack.com/uworldlink/web/af6066d33fe3dc5c49e76eb024f304f571b48b85/azda website/css/default-skin-player.css';
-var light_skin_player = 'https://rawcdn.githack.com/uworldlink/web/af6066d33fe3dc5c49e76eb024f304f571b48b85/azda website/css/light-skin-player.css';
-var dark_skin_player = 'https://rawcdn.githack.com/uworldlink/web/af6066d33fe3dc5c49e76eb024f304f571b48b85/azda website/css/dark-skin-player.css';
+var auto_skin_player = 'https://cdn.jsdelivr.net/gh/uworldlink/web/azda%20website/css/player/default-player.min.css';
+var light_skin_player = 'https://cdn.jsdelivr.net/gh/uworldlink/web/azda%20website/css/player/light-player.min.css'';
+var dark_skin_player = 'https://cdn.jsdelivr.net/gh/uworldlink/web/azda%20website/css/player/dark-player.min.css'';
 
 if ((localStorage.getItem('themeSwitch') === null) || (localStorage.getItem('themeSwitch') == 0)) {
   load_player_CSS(auto_skin_player);
