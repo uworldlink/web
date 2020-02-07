@@ -1,14 +1,14 @@
 function load_player_CSS(ref) {
   var playerId = 'player-skin';
   if (!document.getElementById(playerId)) {
-  var head  = document.getElementsByTagName('head')[0];
-  var link  = document.createElement('link');
-  link.id   = playerId;
-  link.rel  = 'stylesheet';
-  link.type = 'text/css';
-  link.href = ref;
-  link.media = 'all';
-  head.appendChild(link);
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = playerId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = ref;
+    link.media = 'all';
+    head.appendChild(link);
   }
 }
 var auto_skin_player = 'https://cdn.jsdelivr.net/gh/uworldlink/web/azda%20website/css/player/default-player.min.css';
