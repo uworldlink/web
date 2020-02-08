@@ -157,13 +157,15 @@ jQuery(function ($) {
             trackCount = tracks.length,
             npAction = $('#npAction'),
             npTitle = $('#npTitle'),
-            video = $('#video1').on('play', function () {
+            video = $('#video1').get(0).on('play', function () {
                 playing = true;
                 npAction.text('Now Playing...');
-            }).on('pause', function () {
+            })
+            player.on('pause', function () {
                 playing = false;
                 npAction.text('Paused...');
-            }).on('ended', function () {
+            })
+            player.on('ended', function () {
                 npAction.text('Paused...');
                 if ((index + 1) < trackCount) {
                     index++;
@@ -174,7 +176,7 @@ jQuery(function ($) {
                     index = 0;
                     loadTrack(index);
                 }
-            }).get(0),
+            }),
             btnPrev = $('#btnPrev').on('click', function () {
                 if ((index - 1) > -1) {
                     index--;
