@@ -39,7 +39,15 @@ jQuery(function ($) {
                 "track": 2,
                 "name": "Heritage",
                 "duration": "8:30",
-                "link": "aH7nE6MXJyo"
+                "link": {
+                    type: 'video',
+                    sources: [
+                        {
+                            src: 'aH7nE6MXJyo',
+                            provider: 'youtube',
+                        },
+                    ],
+                };
             }, {
                 "track": 3,
                 "name": "All The King's Men - Broadwing Studio (Final Mix)",
