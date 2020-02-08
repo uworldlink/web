@@ -26,7 +26,15 @@ jQuery(function ($) {
                 "track": 1,
                 "name": "Ephemere",
                 "duration": "2:46",
-                "link": "1j2-tSap_P8"
+                "link": {
+                    type: 'video',
+                    sources: [
+                        {
+                            src: '1j2-tSap_P8',
+                            provider: 'youtube',
+                        },
+                    ],
+                };
             }, {
                 "track": 2,
                 "name": "Heritage",
@@ -196,8 +204,8 @@ jQuery(function ($) {
                 $('#plList li:eq(' + id + ')').addClass('plSel');
                 npTitle.text(tracks[id].name);
                 index = id;
-                video.src = tracks[id].link;
-                updateDownload(id, video.src);
+                video.source = tracks[id].link;
+                //updateDownload(id, video.src);
             },
             updateDownload = function (id, source) {
                 player.on('loadedmetadata', function () {
