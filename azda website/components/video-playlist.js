@@ -159,9 +159,11 @@ jQuery(function ($) {
             npTitle = $('#npTitle'),
             video = $('#video1').on('play', function () {
                 playing = true;
+                console.log("play:", "true");
                 npAction.text('Now Playing...');
             }).on('pause', function () {
                 playing = false;
+                console.log("play:", "false");
                 npAction.text('Paused...');
             }).on('ended', function () {
                 npAction.text('Paused...');
