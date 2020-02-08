@@ -5,7 +5,7 @@ jQuery(function ($) {
     var supportsVideo = !!document.createElement('video').canPlayType;
     if (supportsVideo) {
         // initialize plyr
-        var video = new Plyr('#video1', {
+        var player = new Plyr('#video1', {
             controls: [
                 'restart',
                 'play',
@@ -212,7 +212,7 @@ jQuery(function ($) {
                 $('#plList li:eq(' + id + ')').addClass('plSel');
                 npTitle.text(tracks[id].name);
                 index = id;
-                video.source = tracks[id].link;
+                player.source = tracks[id].link;
                 //updateDownload(id, video.src);
             },
             updateDownload = function (id, source) {
