@@ -220,11 +220,11 @@ player.on('play', function () {
                 playing = true;
                 console.log("play:", "true");
                 npAction.text('Now Playing...');
-            })player.on('pause', function () {
+            }).on('pause', function () {
                 playing = false;
                 console.log("play:", "false");
                 npAction.text('Paused...');
-            })player.on('ended', function () {
+            }).on('ended', function () {
                 npAction.text('Paused...');
                 if ((index + 1) < trackCount) {
                     index++;
@@ -235,4 +235,4 @@ player.on('play', function () {
                     index = 0;
                     loadTrack(index);
                 }
-            })
+            });
