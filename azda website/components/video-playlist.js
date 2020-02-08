@@ -157,7 +157,7 @@ jQuery(function ($) {
             trackCount = tracks.length,
             npAction = $('#npAction'),
             npTitle = $('#npTitle'),
-            player = $('#video1').on('play', function () {
+            video = $('#video1').on('play', function () {
                 playing = true;
                 console.log("play:", "true");
                 npAction.text('Now Playing...');
@@ -170,9 +170,9 @@ jQuery(function ($) {
                 if ((index + 1) < trackCount) {
                     index++;
                     loadTrack(index);
-                    player.play();
+                    video.play();
                 } else {
-                    player.pause();
+                    video.pause();
                     index = 0;
                     loadTrack(index);
                 }
