@@ -5,7 +5,7 @@ jQuery(function ($) {
     var supportsVideo = !!document.createElement('video').canPlayType;
     if (supportsVideo) {
         // initialize plyr
-        var player = new Plyr('#video1', {
+        var video = new Plyr('#video1', {
             controls: [
                 'restart',
                 'play',
@@ -157,7 +157,7 @@ jQuery(function ($) {
             trackCount = tracks.length,
             npAction = $('#npAction'),
             npTitle = $('#npTitle'),
-            video = $('#video1').on('play', function () {
+            video.on('play', function () {
                 playing = true;
                 npAction.text('Now Playing...');
             }).on('pause', function () {
