@@ -34,7 +34,7 @@ jQuery(function ($) {
                             provider: 'youtube',
                         },
                     ],
-                };
+                }
             }, {
                 "track": 2,
                 "name": "Heritage",
@@ -47,7 +47,7 @@ jQuery(function ($) {
                             provider: 'youtube',
                         },
                     ],
-                };
+                }
             }, {
                 "track": 3,
                 "name": "All The King's Men - Broadwing Studio (Final Mix)",
