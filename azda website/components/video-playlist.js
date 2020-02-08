@@ -176,7 +176,7 @@ jQuery(function ($) {
                     index = 0;
                     loadTrack(index);
                 }
-            })player.get(0),
+            })$('#video1').get(0),
             btnPrev = $('#btnPrev').on('click', function () {
                 if ((index - 1) > -1) {
                     index--;
