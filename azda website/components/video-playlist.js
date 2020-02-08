@@ -157,7 +157,7 @@ jQuery(function ($) {
             trackCount = tracks.length,
             npAction = $('#npAction'),
             npTitle = $('#npTitle'),
-            video = $('video-playlist').on('play', function () {
+            video = $('.video-playlist').on('play', function () {
                 playing = true;
                 console.log("play:", "true");
                 npAction.text('Now Playing...');
