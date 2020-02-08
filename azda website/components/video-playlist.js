@@ -157,7 +157,7 @@ jQuery(function ($) {
             trackCount = tracks.length,
             npAction = $('#npAction'),
             npTitle = $('#npTitle'),
-            video = $('#video1').get(0).on('play', function () {
+            video = $('#video1').on('play', function () {
                 playing = true;
                 npAction.text('Now Playing...');
             })
@@ -176,7 +176,7 @@ jQuery(function ($) {
                     index = 0;
                     loadTrack(index);
                 }
-            }),
+            }).get(0),
             btnPrev = $('#btnPrev').on('click', function () {
                 if ((index - 1) > -1) {
                     index--;
