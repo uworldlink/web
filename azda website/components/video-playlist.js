@@ -157,26 +157,7 @@ jQuery(function ($) {
             trackCount = tracks.length,
             npAction = $('#npAction'),
             npTitle = $('#npTitle'),
-            video = $('#video1').on('play', function () {
-                playing = true;
-                console.log("play:", "true");
-                npAction.text('Now Playing...');
-            }).on('pause', function () {
-                playing = false;
-                console.log("play:", "false");
-                npAction.text('Paused...');
-            }).on('ended', function () {
-                npAction.text('Paused...');
-                if ((index + 1) < trackCount) {
-                    index++;
-                    loadTrack(index);
-                    video.play();
-                } else {
-                    video.pause();
-                    index = 0;
-                    loadTrack(index);
-                }
-            }).get(0),
+            video = $('#video1').get(0),
             btnPrev = $('#btnPrev').on('click', function () {
                 if ((index - 1) > -1) {
                     index--;
@@ -235,3 +216,23 @@ jQuery(function ($) {
         $('.container').append('<p class="no-support">' + noSupport + '</p>');
     }
 });
+player.on('play', function () {
+                playing = true;
+                console.log("play:", "true");
+                npAction.text('Now Playing...');
+            })player.on('pause', function () {
+                playing = false;
+                console.log("play:", "false");
+                npAction.text('Paused...');
+            })player.on('ended', function () {
+                npAction.text('Paused...');
+                if ((index + 1) < trackCount) {
+                    index++;
+                    loadTrack(index);
+                    video.play();
+                } else {
+                    video.pause();
+                    index = 0;
+                    loadTrack(index);
+                }
+            })
