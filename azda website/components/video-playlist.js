@@ -221,7 +221,7 @@ jQuery(function ($) {
                 player.source = tracks[id].link;
             },
             playTrack = function () {
-                setTimeout(playPlayer, 100);
+                setTimeout(playPlayer, 1000);
             },
             playPlayer = function () {
                 //loadTrack(id);
