@@ -33,7 +33,7 @@ jQuery(function ($) {
                 if ((index + 1) < trackCount) {
                     index++;
                     loadTrack(index);
-                    player.play();
+                    playTrack();
                 } else {
                     player.pause();
                     index = 0;
@@ -185,7 +185,7 @@ jQuery(function ($) {
                     index--;
                     loadTrack(index);
                     if (playing) {
-                        player.play();
+                        playTrack();
                     }
                 } else {
                     player.pause();
@@ -198,7 +198,7 @@ jQuery(function ($) {
                     index++;
                     loadTrack(index);
                     if (playing) {
-                        player.play();
+                        playTrack();
                     }
                 } else {
                     player.pause();
@@ -209,7 +209,8 @@ jQuery(function ($) {
             li = $('#plList li').on('click', function () {
                 var id = parseInt($(this).index());
                 if (id !== index) {
-                    playTrack(id);
+                    loadTrack(id);
+                    playTrack();
                 }
             }),
             loadTrack = function (id) {
@@ -218,15 +219,12 @@ jQuery(function ($) {
                 npTitle.text(tracks[id].name);
                 index = id;
                 player.source = tracks[id].link;
-                //updateDownload(id, video.src);
             },
-            updateDownload = function (id, source) {
-                player.on('loadedmetadata', function () {
-                    $('a[data-plyr="download"]').attr('href', source);
-                });
+            playTrack = function () {
+                setTimeout(playPlayer, 100);
             },
-            playTrack = function (id) {
-                loadTrack(id);
+            playPlayer = function () {
+                //loadTrack(id);
                 player.play();
             };
         //extension = video.canPlayType('video/mp4') ? '.mp4' : video.canPlayType('video/webm') ? '.webm' : '';
