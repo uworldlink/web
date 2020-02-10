@@ -4,10 +4,13 @@
  *
  */
  
+/*
 :root {
-  --main-bg-color: coral;
+  --player-bg-color: #fff;
+  --player-bg-color-2: #f3f5f7;
   --player-selection-color: #d89c1b;
-}
+} 
+*/
 .plyr {
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -183,7 +186,7 @@ background: var(--player-selection-color);
     position: relative;
     z-index: 3;
     overflow: auto;
-    background: #fff;
+    background: var(--player-bg-color);
     text-align: left;
     line-height: 1;
 }
@@ -198,7 +201,7 @@ background: var(--player-selection-color);
 }
 
 .js-player__item:nth-child(even) {
-    background: #f3f5f7;
+    background: var(--player-bg-color-2);
 }
 
 .js-player__item:hover {
