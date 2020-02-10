@@ -9,6 +9,8 @@
   --player-bg-color: #fff;
   --player-bg-color-2: #f3f5f7;
   --player-selection-color: #d89c1b;
+  --player-item-hover-color: #dedfe0;
+  --player-item-text-color: #090f25;
 } 
 */
 .plyr {
@@ -197,7 +199,7 @@ background: var(--player-selection-color);
     font-size: 13px;
     cursor: pointer;
     position: relative;
-    color: #090f25;
+    color: var(--player-item-text-color);
 }
 
 .js-player__item:nth-child(even) {
@@ -205,7 +207,7 @@ background: var(--player-selection-color);
 }
 
 .js-player__item:hover {
-    background: #dedfe0;
+    background: var(--player-item-hover-color);
 }
 
 .js-player__item--active {
