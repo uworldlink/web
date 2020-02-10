@@ -201,7 +201,8 @@ background: #d89c1b;
 }
 
 .chp__item--active {
-    background: #1aafff !important;
+    /*background: #1aafff !important;*/
+    background: #d89c1b !important;
     color: #fff !important;
 }
 
